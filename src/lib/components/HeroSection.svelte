@@ -1,17 +1,21 @@
 <script>
-	import Header from '$lib/components/Header/Header.svelte';
+	import Header from '$lib/components/header/Header.svelte';
 </script>
 
 <Header />
-<section class="flex flex-col gap-y-6 text-center">
-	<h1 class="title-mobile">Find the <br /> best <span class="text-error-500">talent</span></h1>
-	<p class="text-3">
-		Finding the right people and building high <br />
-		performing teams can be hard. Most <br />
-		companies aren’t tapping into the abundance <br />
-		of global talent. We’re about to change that.
+<section class="flex flex-col items-center gap-y-6 text-center">
+	<h1 class="text-3xl md:text-5xl lg:6xl">
+		Find the <br /> best <span class="text-error-500">talent</span>
+	</h1>
+	<p class="text-3 md:w-[457px]">
+		Finding the right people and building high performing teams can be hard. Most companies aren’t
+		tapping into the abundance of global talent. We’re about to change that.
 	</p>
-	<svg class="relative -bottom-12" xmlns="http://www.w3.org/2000/svg" width="358" height="100"
+	<svg
+		class="relative -bottom-12 md:mt-16"
+		xmlns="http://www.w3.org/2000/svg"
+		width="358"
+		height="100"
 		><g fill="none" fill-rule="evenodd"
 			><circle cx="100" cy="100" r="100" fill="#2C6269" /><path
 				fill="#012F34"

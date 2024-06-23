@@ -1,6 +1,6 @@
 <script lang="ts">
-	import ContactFormLabel from '$lib/components/ContactFormLabel.svelte';
-	import Button from '$lib/components/Button.svelte';
+	import ContactFormLabel from '$lib/components/contact-form/ContactFormLabel.svelte';
+	import Button from '$lib/components/utils/Button.svelte';
 
 	interface Label {
 		name: string;

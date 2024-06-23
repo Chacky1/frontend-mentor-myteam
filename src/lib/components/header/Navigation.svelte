@@ -1,12 +1,14 @@
 <script>
 	import { getDrawerStore } from '@skeletonlabs/skeleton';
-	import Button from '$lib/components/Button.svelte';
+	import Button from '$lib/components/utils/Button.svelte';
 
 	const drawerStore = getDrawerStore();
 </script>
 
-<nav class="pr-9 pl-12 py-14 flex flex-col gap-y-14">
-	<button class="self-end" on:click={() => drawerStore.close()}>
+<nav
+	class="pr-9 pl-12 py-14 flex flex-col gap-y-14 md:flex-row md:w-full md:items-center md:pr-0 md:py-0"
+>
+	<button class="self-end md:hidden" on:click={() => drawerStore.close()}>
 		<svg xmlns="http://www.w3.org/2000/svg" width="18" height="17">
 			<path
 				fill="#FFF"
@@ -15,15 +17,13 @@
 			/>
 		</svg>
 	</button>
-	<ul class="flex flex-col gap-y-14">
+	<ul class="flex flex-col gap-y-14 md:flex-row md:w-full md:gap-x-10">
 		<li><a class="text-1" href="/">home</a></li>
 		<li><a class="text-1" href="/about">about</a></li>
-		<li class="mt-2">
-			<a href="/contact"><Button text="contact us" outlined /></a>
-		</li>
 	</ul>
+	<a class="mt-2 md:mt-0" href="/contact"><Button text="contact us" outlined /></a>
 	<svg
-		class="absolute bottom-0 -right-[100px]"
+		class="absolute bottom-0 -right-[100px] md:hidden"
 		xmlns="http://www.w3.org/2000/svg"
 		width="200"
 		height="200"

@@ -33,7 +33,7 @@
 	] as Testimonial[];
 </script>
 
-<section id="testimonials" class="flex flex-col gap-y-14">
+<section id="testimonials" class="flex flex-col gap-y-14 md:w-[573px] md:m-auto">
 	<svg class="absolute top-0 left-0" xmlns="http://www.w3.org/2000/svg" width="147" height="100"
 		><g fill="none" fill-rule="evenodd"
 			><path fill="#002529" d="M0 100h100V0H0z" /><path
@@ -42,7 +42,7 @@
 			/></g
 		></svg
 	>
-	<h2 class="title-mobile text-center mt-[100px]">
+	<h2 class="text-xl text-center mt-[100px]">
 		Delivering real results for top companies. Some of our <span class="text-success-500"
 			>success stories.</span
 		>

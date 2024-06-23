@@ -9,7 +9,7 @@
 	let isCardFlipped = false;
 </script>
 
-<div class="h-[253px] relative">
+<div class="h-[253px] w-[281px] relative">
 	{#if !isCardFlipped}
 		<div class="flex flex-col gap-y-4 items-center bg-surface-800 pt-8 px-6 h-full">
 			<Avatar

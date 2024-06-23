@@ -2,7 +2,7 @@
 	import '../app.postcss';
 	import { initializeStores, Drawer } from '@skeletonlabs/skeleton';
 
-	import Navigation from '$lib/components/Header/Navigation.svelte';
+	import Navigation from '$lib/components/header/Navigation.svelte';
 
 	initializeStores();
 </script>

@@ -32,7 +32,7 @@
 
 <section id="clients" class="flex flex-col gap-y-16">
 	<svg
-		class="absolute -top-[100px] -left-[100px]"
+		class="absolute -top-[100px] -left-[100px] md:left-0"
 		xmlns="http://www.w3.org/2000/svg"
 		width="200"
 		height="200"
@@ -46,8 +46,8 @@
 			/></g
 		></svg
 	>
-	<h2 class="title-mobile text-center">Some of our clients</h2>
-	<ul class="flex flex-col items-center gap-y-12">
+	<h2 class="text-xl text-center">Some of our clients</h2>
+	<ul class="flex flex-col items-center gap-y-12 md:flex-row md:justify-around">
 		{#each clients as client}
 			<li>
 				<ClientLogo {...client} />

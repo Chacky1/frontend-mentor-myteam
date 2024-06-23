@@ -1,21 +1,17 @@
 <script>
-	import Header from '$lib/components/Header/Header.svelte';
+	import Header from '$lib/components/header/Header.svelte';
 </script>
 
 <Header />
 <section id="about" class="flex flex-col gap-y-4">
-	<h1 class="title-mobile text-center">About</h1>
-	<p class="text-3 text-center pb-20">
-		We help companies build dynamic teams <br />
-		made up of top global talent. Using our <br />
-		network of passionate professionals we drive <br />
-		innovation and deliver incredible outcomes. <br />
-		Talented, diverse teams shape the best <br />
-		products and experiences. We’ll bring those <br />
-		teams to you.
+	<h1 class="text-3xl text-center md:text-5xl">About</h1>
+	<p class=" w-[327px] text-3 text-center pb-20 m-auto md:w-[457px]">
+		We help companies build dynamic teams made up of top global talent. Using our network of
+		passionate professionals we drive innovation and deliver incredible outcomes. Talented, diverse
+		teams shape the best products and experiences. We’ll bring those teams to you.
 	</p>
 	<svg
-		class="absolute -bottom-[100px] -right-[100px]"
+		class="absolute -bottom-[100px] -right-[100px] md:bottom-0"
 		xmlns="http://www.w3.org/2000/svg"
 		width="200"
 		height="200"

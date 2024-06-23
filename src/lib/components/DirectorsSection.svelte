@@ -14,35 +14,35 @@
 			name: 'Nikita Marks',
 			role: 'Founder & CEO',
 			quote:
-				'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+				'“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”'
 		},
 		{
 			avatarPath: 'avatar-christian.jpg',
 			name: 'Christian Duncan',
 			role: 'Co-founder & COO',
 			quote:
-				'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+				'“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”'
 		},
 		{
 			avatarPath: 'avatar-cruz.jpg',
 			name: 'Cruz Hamer',
 			role: 'Co-founder & CTO',
 			quote:
-				'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+				'“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”'
 		},
 		{
 			avatarPath: 'avatar-drake.jpg',
 			name: 'Drake Heaton',
 			role: 'Business Development Lead',
 			quote:
-				'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+				'“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”'
 		},
 		{
 			avatarPath: 'avatar-griffin.jpg',
 			name: 'Griffin Wise',
 			role: 'Lead Marketing',
 			quote:
-				'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+				'“Unique perspectives shape unique products, which is what you need to survive these days.”'
 		},
 		{
 			avatarPath: 'avatar-aden.jpg',
@@ -56,7 +56,7 @@
 
 <section class="flex flex-col gap-y-10 text-center">
 	<svg
-		class="absolute -top-[100px] -left-[100px]"
+		class="absolute -top-[100px] -left-[100px] md:top-0"
 		xmlns="http://www.w3.org/2000/svg"
 		width="200"
 		height="200"
@@ -73,8 +73,8 @@
 			/></g
 		></svg
 	>
-	<h2 class="text-center title-mobile">Meet the Directors</h2>
-	<ul class="flex flex-col gap-y-16 mb-10">
+	<h2 class="text-center text-xl">Meet the Directors</h2>
+	<ul class="flex justify-center flex-wrap gap-x-3 gap-y-16 mb-10">
 		{#each directors as director}
 			<li><DirectorCard {...director} /></li>
 		{/each}
