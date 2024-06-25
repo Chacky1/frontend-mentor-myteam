@@ -31,7 +31,7 @@
 		</svelte:fragment>
 	</AppBar>
 </div>
-<div class="hidden md:block">
+<div class="hidden md:block lg:w-4/5 lg:m-auto">
 	<AppBar background="bg-inherit" gap="gap-0">
 		<svg xmlns="http://www.w3.org/2000/svg" width="160" height="40">
 			<path

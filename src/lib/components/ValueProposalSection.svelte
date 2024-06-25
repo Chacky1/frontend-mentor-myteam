@@ -29,7 +29,10 @@
 	] as ValueProposal[];
 </script>
 
-<section class="flex flex-col gap-y-14 md:max-w-[573px] md:m-auto" id="value-proposal">
+<section
+	class="flex flex-col gap-y-14 md:max-w-[573px] md:m-auto lg:flex-row lg:gap-x-[125px] lg:max-w-[80%]"
+	id="value-proposal"
+>
 	<svg
 		class="absolute -right-[100px] top-0"
 		xmlns="http://www.w3.org/2000/svg"
@@ -47,7 +50,7 @@
 	>
 	<div class="w-[68%] flex flex-col gap-y-8 md:w-3/4">
 		<div id="rectangle" class="bg-error-500 w-[50px] h-[4px]"></div>
-		<h2 class="text-xl">Build & manage distributed teams like no one else.</h2>
+		<h2 class="text-xl lg:text-4xl">Build & manage distributed teams like no one else.</h2>
 	</div>
 	<ul class="flex flex-col gap-y-12">
 		{#each valueProposals as valueProposal}

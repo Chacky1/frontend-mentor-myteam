@@ -54,7 +54,7 @@
 	] as Director[];
 </script>
 
-<section class="flex flex-col gap-y-10 text-center">
+<section class="flex flex-col gap-y-10 text-center lg:w-4/5 lg:m-auto">
 	<svg
 		class="absolute -top-[100px] -left-[100px] md:top-0"
 		xmlns="http://www.w3.org/2000/svg"
@@ -73,7 +73,7 @@
 			/></g
 		></svg
 	>
-	<h2 class="text-center text-xl">Meet the Directors</h2>
+	<h2 class="text-center text-xl lg:text-4xl">Meet the Directors</h2>
 	<ul class="flex justify-center flex-wrap gap-x-3 gap-y-16 mb-10">
 		{#each directors as director}
 			<li><DirectorCard {...director} /></li>

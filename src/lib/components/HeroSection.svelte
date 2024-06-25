@@ -3,16 +3,21 @@
 </script>
 
 <Header />
-<section class="flex flex-col items-center gap-y-6 text-center">
-	<h1 class="text-3xl md:text-5xl lg:6xl">
+<section
+	class="relative flex flex-col justify-center items-center gap-y-6 text-center pb-20 lg:flex-row lg:gap-x-8 lg:m-auto lg:pb-[250px] lg:text-start"
+>
+	<h1 class="text-3xl md:text-5xl lg:text-6xl lg:w-[635px]">
 		Find the <br /> best <span class="text-error-500">talent</span>
 	</h1>
-	<p class="text-3 md:w-[457px]">
-		Finding the right people and building high performing teams can be hard. Most companies aren’t
-		tapping into the abundance of global talent. We’re about to change that.
-	</p>
+	<div class="flex flex-col justify-between h-[200px]">
+		<div class="hidden w-[50px] h-[4px] bg-success-500 lg:block"></div>
+		<p class="text-lg md:w-[457px] lg:w-[445px]">
+			Finding the right people and building high performing teams can be hard. Most companies aren’t
+			tapping into the abundance of global talent. We’re about to change that.
+		</p>
+	</div>
 	<svg
-		class="relative -bottom-12 md:mt-16"
+		class="absolute -bottom-12 lg:right-0"
 		xmlns="http://www.w3.org/2000/svg"
 		width="358"
 		height="100"

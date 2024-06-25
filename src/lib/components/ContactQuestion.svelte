@@ -5,5 +5,5 @@
 
 <div class="flex gap-x-6 items-center">
 	<img class="w-[72px] h-[72px]" src={imagePath} alt={question} />
-	<p class="text-1">{question}</p>
+	<p class="text-lg">{question}</p>
 </div>

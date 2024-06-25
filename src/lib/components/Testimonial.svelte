@@ -5,7 +5,7 @@
 	export let avatarPath;
 </script>
 
-<div class="flex flex-col gap-y-4 text-center">
+<div class="flex flex-col gap-y-4 text-center lg:w-[350px]">
 	<div class="flex justify-center relative top-10">
 		<svg class="p-auto" xmlns="http://www.w3.org/2000/svg" width="67" height="56"
 			><path
@@ -14,10 +14,10 @@
 			/></svg
 		>
 	</div>
-	<p class="text-2 z-10">{quote}</p>
+	<p class="text-sm z-10">{quote}</p>
 	<div>
-		<p class="text-1 text-success-500">{author}</p>
-		<p class="text-4 italic">{work}</p>
+		<p class="text-lg text-success-500">{author}</p>
+		<p class="text-xs italic">{work}</p>
 	</div>
 	<img
 		class="rounded-full border-success-300 border-2 m-auto"

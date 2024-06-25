@@ -4,9 +4,9 @@
 
 <section
 	id="action"
-	class="flex flex-col items-center gap-y-6 bg-error-500 text-surface-800 text-center py-20 px-6 relative overflow-hidden md:flex-row md:gap-x-20 md:justify-center"
+	class="flex flex-col items-center gap-y-6 bg-error-500 text-surface-800 text-center py-20 px-6 relative overflow-hidden md:flex-row md:gap-x-20 md:justify-center lg:justify-around"
 >
-	<h2 class="text-xl w-[327px] md:w-auto">Ready to get started?</h2>
+	<h2 class="text-xl w-[327px] md:w-auto lg:text-4xl">Ready to get started?</h2>
 	<a href="/contact"><Button text="contact us" outlined darkMode /></a>
 	<svg class="absolute -bottom-5 left-0" xmlns="http://www.w3.org/2000/svg" width="200" height="144"
 		><g fill="none" fill-rule="evenodd"

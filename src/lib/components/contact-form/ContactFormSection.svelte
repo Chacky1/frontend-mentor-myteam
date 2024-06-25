@@ -25,8 +25,15 @@
 </script>
 
 <Header />
-<section id="contact" class="flex flex-col gap-y-10 md:w-[515px] md:m-auto">
-	<svg class="hidden absolute -left-[100px] md:block" xmlns="http://www.w3.org/2000/svg" width="200" height="200"
+<section
+	id="contact"
+	class="flex flex-col gap-y-10 md:w-[515px] md:m-auto lg:flex-row lg:gap-x-8 lg:m-0 lg:w-full lg:justify-center"
+>
+	<svg
+		class="hidden absolute -left-[100px] md:block"
+		xmlns="http://www.w3.org/2000/svg"
+		width="200"
+		height="200"
 		><g fill="none" fill-rule="evenodd"
 			><path fill="#2C6269" d="M100 100h100V0H100z" /><path
 				fill="#012F34"
@@ -40,16 +47,18 @@
 			/></g
 		></svg
 	>
-	<div class="flex flex-col gap-y-6">
-		<h1 class="text-3xl text-center md:text-5xl">Contact</h1>
-		<h2 class="text-error-500 title-contact text-center text-2xl">Ask us about</h2>
+	<div class="flex flex-col gap-y-10">
+		<div class="flex flex-col gap-y-6">
+			<h1 class="text-3xl text-center md:text-5xl lg:text-start">Contact</h1>
+			<h2 class="text-error-500 title-contact text-center text-2xl lg:text-start">Ask us about</h2>
+		</div>
+		<ul class="flex flex-col gap-y-6">
+			{#each contactQuestions as contactQuestion}
+				<li><ContactQuestion {...contactQuestion} /></li>
+			{/each}
+		</ul>
 	</div>
-	<ul class="flex flex-col gap-y-6">
-		{#each contactQuestions as contactQuestion}
-			<li><ContactQuestion {...contactQuestion} /></li>
-		{/each}
-	</ul>
-	<div class="mb-10">
+	<div class="mb-10 lg:min-w-[542px]">
 		<ContactForm />
 	</div>
 	<svg

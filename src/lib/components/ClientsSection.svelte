@@ -46,7 +46,7 @@
 			/></g
 		></svg
 	>
-	<h2 class="text-xl text-center">Some of our clients</h2>
+	<h2 class="text-xl text-center lg:text-4xl">Some of our clients</h2>
 	<ul class="flex flex-col items-center gap-y-12 md:flex-row md:justify-around">
 		{#each clients as client}
 			<li>

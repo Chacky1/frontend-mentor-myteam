@@ -5,6 +5,7 @@
 	import ClientsSection from '$lib/components/ClientsSection.svelte';
 	import FooterMobile from '$lib/components/footer/FooterMobile.svelte';
 	import FooterTablet from '$lib/components/footer/FooterTablet.svelte';
+	import FooterComputer from '$lib/components/footer/FooterComputer.svelte';
 </script>
 
 <div class="bg-surface-500 relative overflow-hidden">
@@ -31,4 +32,7 @@
 </div>
 <div class="hidden md:block lg:hidden">
 	<FooterTablet />
+</div>
+<div class="hidden lg:block">
+	<FooterComputer />
 </div>

@@ -8,6 +8,7 @@
 
 	const handleFocus = () => {
 		isFocused = true;
+		isNotCompleted = false;
 	};
 
 	const handleBlur = (event) => {
@@ -23,10 +24,10 @@
 </script>
 
 {#if type === 'input'}
-	<label class="label">
-		<span class="text-2 opacity-60">{name}</span>
+	<label class="label hover:cursor-pointer">
+		<span class="text-sm opacity-60 {isNotCompleted ? 'text-error-500' : ''}">{name}</span>
 		<input
-			class="input variant-form-material border-b outline-none
+			class="input variant-form-material border-b outline-none hover:cursor-pointer
 				{isFocused ? '!border-b-success-500' : isNotCompleted ? '!border-b-error-500' : '!border-b-white'}
 			"
 			type="text"
@@ -35,12 +36,15 @@
 			on:focus={handleFocus}
 			on:blur={handleBlur}
 		/>
+		{#if isNotCompleted}
+			<p class="text-xs text-error-500">This field is required</p>
+		{/if}
 	</label>
 {:else if type === 'textarea'}
-	<label class="label">
-		<span class="text-2 opacity-60">{name}</span>
+	<label class="label hover:cursor-pointer">
+		<span class="text-sm opacity-60 {isNotCompleted ? 'text-error-500' : ''}">{name}</span>
 		<textarea
-			class="textarea variant-form-material border-b outline-none
+			class="textarea variant-form-material border-b outline-none hover:cursor-pointer
 				{isFocused ? '!border-b-success-500' : isNotCompleted ? '!border-b-error-500' : '!border-b-white'}
 			"
 			rows="3"
@@ -49,5 +53,8 @@
 			on:focus={handleFocus}
 			on:blur={handleBlur}
 		/>
+		{#if isNotCompleted}
+			<p class="text-xs text-error-500">This field is required</p>
+		{/if}
 	</label>
 {/if}

@@ -8,10 +8,10 @@
 		<img src="logo.svg" alt="logo" width="96" height="24" />
 	</div>
 	<ul class="flex justify-center gap-x-6">
-		<li><a class="text-1" href="/">home</a></li>
-		<li><a class="text-1" href="/about">about</a></li>
+		<li><a class="text-lg" href="/">home</a></li>
+		<li><a class="text-lg" href="/about">about</a></li>
 	</ul>
 	<Contact />
 	<FooterSocial />
-	<p class="text-2 opacity-60 text-center">Copyright 2020. All Rights Reserved</p>
+	<p class="text-sm opacity-60 text-center">Copyright 2020. All Rights Reserved</p>
 </footer>

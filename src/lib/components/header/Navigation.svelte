@@ -1,6 +1,7 @@
 <script>
 	import { getDrawerStore } from '@skeletonlabs/skeleton';
 	import Button from '$lib/components/utils/Button.svelte';
+	import NavigationLink from '$lib/components/utils/NavigationLink.svelte';
 
 	const drawerStore = getDrawerStore();
 </script>
@@ -18,10 +19,17 @@
 		</svg>
 	</button>
 	<ul class="flex flex-col gap-y-14 md:flex-row md:w-full md:gap-x-10">
-		<li><a class="text-1" href="/">home</a></li>
-		<li><a class="text-1" href="/about">about</a></li>
+		<NavigationLink pageName="home" />
+		<NavigationLink pageName="about" />
 	</ul>
-	<a class="mt-2 md:mt-0" href="/contact"><Button text="contact us" outlined /></a>
+	<a class="mt-2 md:mt-0" href="/contact"
+		><Button
+			text="contact us"
+			hoverBgClass="bg-white"
+			hoverTextClass="text-surface-900"
+			outlined
+		/></a
+	>
 	<svg
 		class="absolute bottom-0 -right-[100px] md:hidden"
 		xmlns="http://www.w3.org/2000/svg"

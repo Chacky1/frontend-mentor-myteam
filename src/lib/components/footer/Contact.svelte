@@ -1,4 +1,4 @@
-<section id="contact" class="text-2 text-center w-fit m-auto opacity-60">
+<section id="contact" class="text-sm text-center w-fit m-auto opacity-60 lg:text-start lg:m-0">
 	<p>987 Hillcrest Lane</p>
 	<p>Irvine, CA</p>
 	<p>California 92714</p>
