@@ -6,7 +6,7 @@
 <section id="about" class="flex flex-col gap-y-4 lg:flex-row lg:w-4/5 lg:m-auto lg:gap-x-8">
 	<h1 class="text-3xl text-center md:text-5xl">About</h1>
 	<div
-		class="flex flex-col gap-y-10 w-[327px] text-base text-center pb-20 m-auto md:w-[457px] lg:text-start lg:w-[730px]"
+		class="flex flex-col gap-y-10 text-base text-center pb-20 m-auto md:w-[457px] lg:text-start lg:w-[730px]"
 	>
 		<div class="hidden w-[50px] h-[4px] bg-error-500 lg:block"></div>
 		<p>
