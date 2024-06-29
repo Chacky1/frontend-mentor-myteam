@@ -21,8 +21,7 @@ const config = {
 				precompress: false,
 				envPrefix: ''
 			})
-		]),
-		target: '#svelte'
+		])
 	}
 };
 export default config;
